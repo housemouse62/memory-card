@@ -4,7 +4,7 @@ export function GetImages() {
   const [imageSrc, setImageSrc] = useState(null);
   useEffect(() => {
     const controller = new AbortController();
-    const url = "https://the-brainrots-almanac.com/api/brainrots";
+    const url = "http://localhost:3000/api/brainrots";
     fetch(url, { signal: controller.signal })
       .then((response) => {
         if (!response.ok) console.log(response.status);
