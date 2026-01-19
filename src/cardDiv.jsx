@@ -1,26 +1,20 @@
-import { useEffect, useState } from "react";
-
-export function GetImages() {
-  const [imageSrc, setImageSrc] = useState(null);
-  useEffect(() => {
-    const controller = new AbortController();
-    const url = "http://localhost:3000/api/brainrots";
-    fetch(url, { signal: controller.signal })
-      .then((response) => {
-        if (!response.ok) console.log(response.status);
-        return response.json();
-      })
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-
-    return () => controller.abort();
-  }, []);
-  if (!imageSrc) {
-    return <p>Loading...</p>;
+export function GetImages({ imageList, imageNum, setImageNum }) {
+  function randomImage() {
+    const number = Math.floor(Math.random() * imageList.length);
+    console.log(number);
+    setImageNum(number);
   }
-  return <img src={imageSrc}></img>;
+  if (imageList.length === 0 || imageNum === null) {
+    return <p>Loading...</p>;
+  } else console.log(imageNum);
+  return (
+    <>
+      <img src={imageList[imageNum].image}></img>
+      <h2>{imageList[imageNum].name}</h2>
+      <button onClick={() => randomImage()}>New Brain Rot</button>
+      <p></p>
+    </>
+  );
 }
+
+export default GetImages;
