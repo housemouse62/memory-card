@@ -1,18 +1,22 @@
-export function GetImages({ imageList, imageNum, setImageNum }) {
-  function randomImage() {
-    const number = Math.floor(Math.random() * imageList.length);
-    console.log(number);
-    setImageNum(number);
-  }
-  if (imageList.length === 0 || imageNum === null) {
+import "./CardDiv.css";
+
+export function GetImages({ imageGroup, Clicked }) {
+  if (imageGroup.length === 0) {
     return <p>Loading...</p>;
-  } else console.log(imageNum);
+  }
+
   return (
     <>
-      <img src={imageList[imageNum].image}></img>
-      <h2>{imageList[imageNum].name}</h2>
-      <button onClick={() => randomImage()}>New Brain Rot</button>
-      <p></p>
+      <section aria-label="game cards area" className="gameboard">
+        <div className="cards">
+          {imageGroup.map((card) => (
+            <div key={card.key} className="gamecard">
+              <img src={card.image} onClick={() => Clicked(card.key)}></img>
+              <h3>{card.name}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }

@@ -5,8 +5,10 @@ import CardDiv from "./CardDiv";
 
 function App() {
   const [imageList, setImageList] = useState([]);
-  const [imageNum, setImageNum] = useState(null);
+  const [imageGroup, setImageGroup] = useState([]);
+  const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const [clickedCards, setClickedCards] = useState([]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -19,6 +21,10 @@ function App() {
       .then((response) => {
         setImageList(response);
         console.log(response);
+        let twelveImages = [...response]
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 8);
+        setImageGroup(twelveImages);
       })
       .catch((error) => {
         console.log(error);
@@ -26,28 +32,31 @@ function App() {
     return () => controller.abort();
   }, []);
 
-  useEffect(() => {
-    if (imageList.length > 0 && imageNum === null) {
-      setImageNum(Math.floor(Math.random() * imageList.length));
-      console.log(imageNum);
+  function Clicked(id) {
+    if (!clickedCards.includes(id)) {
+      console.log("right on");
+      setScore(score + 1);
     }
-  }, [imageList]);
+    setClickedCards((prev) => [...prev, id]);
+    console.log(id);
+  }
+
+  useEffect(() => {
+    console.log(imageGroup);
+    console.log(clickedCards);
+  });
 
   return (
     <>
       <div></div>
-      <h1>BrainRot</h1>
+      <h1>Click a BrainRot</h1>
       <div className="card">
         <button onClick={() => setHighScore((highScore) => highScore + 1)}>
-          count is {highScore}
+          count is {score}
         </button>
 
         <div>
-          <CardDiv
-            imageList={imageList}
-            imageNum={imageNum}
-            setImageNum={setImageNum}
-          />
+          <CardDiv imageGroup={imageGroup} Clicked={Clicked} />
         </div>
       </div>
     </>
