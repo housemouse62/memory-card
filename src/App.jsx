@@ -21,10 +21,10 @@ function App() {
       .then((response) => {
         setImageList(response);
         console.log(response);
-        let twelveImages = [...response]
+        let eightImages = [...response]
           .sort(() => Math.random() - 0.5)
           .slice(0, 8);
-        setImageGroup(twelveImages);
+        setImageGroup(eightImages);
       })
       .catch((error) => {
         console.log(error);
@@ -32,13 +32,29 @@ function App() {
     return () => controller.abort();
   }, []);
 
+  function Shuffle() {
+    const newList = [...imageList].sort(() => Math.random() - 0.5).slice(0, 8);
+    setImageGroup(newList);
+  }
+
   function Clicked(id) {
     if (!clickedCards.includes(id)) {
       console.log("right on");
-      setScore(score + 1);
+      setScore((prev) => prev + 1);
+      setClickedCards((prev) => [...prev, id]);
+      Shuffle();
+    } else if (clickedCards.includes(id)) {
+      if (highScore < score) {
+        setHighScore(score);
+        setScore(0);
+        setClickedCards([]);
+        Shuffle();
+      } else {
+        setScore(0);
+        setClickedCards([]);
+        Shuffle();
+      }
     }
-    setClickedCards((prev) => [...prev, id]);
-    console.log(id);
   }
 
   useEffect(() => {
@@ -51,10 +67,9 @@ function App() {
       <div></div>
       <h1>Click a BrainRot</h1>
       <div className="card">
-        <button onClick={() => setHighScore((highScore) => highScore + 1)}>
-          count is {score}
-        </button>
-
+        <h2>
+          This round's score is {score} | High Score is {highScore}
+        </h2>
         <div>
           <CardDiv imageGroup={imageGroup} Clicked={Clicked} />
         </div>
