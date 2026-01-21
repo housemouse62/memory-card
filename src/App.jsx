@@ -71,7 +71,11 @@ function App() {
           This round's score is {score} | High Score is {highScore}
         </h2>
         <div>
-          <CardDiv imageGroup={imageGroup} Clicked={Clicked} />
+          <CardDiv
+            imageGroup={imageGroup}
+            Clicked={Clicked}
+            imageList={imageList}
+          />
         </div>
       </div>
     </>

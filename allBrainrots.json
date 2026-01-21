@@ -4,26 +4,22 @@
     "key": "24",
     "slug": "avocadini-guffo",
     "name": "Avocadini Guffo",
-    "image": "./images/001-avocadini-guffo.jpg",
+    "image": "hi-res/001-avocadini-guffo.webp",
     "video": "https://kblrqzpdharaxwokgwqm.supabase.co/storage/v1/object/public/Brainrots/Download%20(5).gif",
     "lyrics_italian": "Avo-avo-avocadini Guffo. Ouwuf ouwuf ouwuf. Gufo grasso saggio, molto utile.\r\n",
     "lyrics_english": "Avo-avo-avocadini Owl. Ouwuf ouwuf ouwuf. Fat wise owl, very helpful.\r\n",
     "lyrics_spanish": "Avo-avo-avocadini Buho. Ouwuf ouwuf ouwuf. Buho gordo y sabio, muy util.\r\n",
-    "personality_english": "Avocadini Guffo is a recent Italian Brainrot character made by @alexey_pigeon.\r\n",
+    "personality_english": "Avoca dini Guffo is a recent Italian Brainrot character made by @alexey_pigeon.\r\n",
     "personality_spanish": "Avocadini Guffo es un personaje reciente de Italian Brainrot creado por @alexey_pigeon.\r\n",
     "history_english": "On March 11, 2025, TikTok user @alexey_pigeon uploaded a video that contains a lot of animal-fruit hybrids, in which the 6th hybrid was Avocadini Guffo.\r\n",
-    "history_spanish": "El 11 de marzo de 2025, el usuario de TikTok @alexey_pigeon subio un video que contenia muchos hibridos de animales con frutas, en el cual el sexto hibrido fue Avocadini Guffo.\r\n",
-    "reception_english": "No official information",
-    "reception_spanish": "No hay informacion oficial",
-    "inbattle_english": "No official information",
-    "inbattle_spanish": "No hay informacion oficial"
+    "history_spanish": "El 11 de marzo de 2025, el usuario de TikTok @alexey_pigeon subio un video que contenia muchos hibridos de animales con frutas, en el cual el sexto hibrido fue Avocadini Guffo.\r\n"
   },
   {
     "id": 2,
     "key": "20",
     "slug": "bambini-crostini",
     "name": "Bambini Crostini",
-    "image": "./images/002-bambini-crostini.jpg",
+    "image": "./hi-res/002-bambini-crostini.jpg",
     "video": "https://kblrqzpdharaxwokgwqm.supabase.co/storage/v1/object/public/Brainrots/Download%20(1).gif",
     "lyrics_italian": "Bambini crostini. Vesuvio gondola amore strada vespa duomo mercato azzuro ciao piazza tricolore ah gia ah mare terraza campanile fiat 500 tarantella dolcevita giardino lago di como firenze profumo mandolino uh alba.'\r\n",
     "lyrics_english": "Bambini Crostini. Vesuvius gondola love street vespa cathedral blue market hello tricolor square ah yes ah sea terrace bell tower fiat 500 tarantella dolcevita garden lake como florence perfume mandolin uh dawn.\r\n",
@@ -31,11 +27,7 @@
     "personality_english": "No offcial information",
     "personality_spanish": "No hay informacion oficial",
     "history_english": "Bambini Crostini is an Italian Brainrot created by TikTok user @top.brainrot on the 15th of March, 2025.\r\n\r\nBambini Crostini is an absurd and iconic figure from the Italian Brainrot universe. As the name suggests, the character combines the childish (“bambini”) with a croissant-like shape (“crostini”).\r\n\r\nIn the picture, Bambini Crostini is seen as a brown deer with a childish face and a body reminiscent of a crispy croissant. Her eyes stare into nothingness, and the whole thing exudes a strange mix of cuteness and disturbing energy – classic Brainrot.\r\n",
-    "history_spanish": "Bambini Crostini es un Italian Brainrot creado por el usuario de TikTok @top.brainrot el 15 de marzo de 2025.\r\n\r\nBambini Crostini es una figura absurda e iconica del universo Italian Brainrot. Como sugiere el nombre, el personaje combina lo infantil (“bambini”) con una forma similar a un croissant (“crostini”).\r\n\r\nEn la imagen, Bambini Crostini aparece como un ciervo marron con un rostro infantil y un cuerpo que recuerda a un croissant crujiente. Sus ojos miran al vacio y en conjunto transmite una extrana mezcla de ternura y energia inquietante, un sello clasico del Brainrot.\r\n",
-    "reception_english": "No offcial information",
-    "reception_spanish": "No hay informacion oficial",
-    "inbattle_english": "No offcial information",
-    "inbattle_spanish": "No hay informacion oficial"
+    "history_spanish": "Bambini Crostini es un Italian Brainrot creado por el usuario de TikTok @top.brainrot el 15 de marzo de 2025.\r\n\r\nBambini Crostini es una figura absurda e iconica del universo Italian Brainrot. Como sugiere el nombre, el personaje combina lo infantil (“bambini”) con una forma similar a un croissant (“crostini”).\r\n\r\nEn la imagen, Bambini Crostini aparece como un ciervo marron con un rostro infantil y un cuerpo que recuerda a un croissant crujiente. Sus ojos miran al vacio y en conjunto transmite una extrana mezcla de ternura y energia inquietante, un sello clasico del Brainrot.\r\n"
   },
   {
     "id": 3,
@@ -76,7 +68,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 17,
+    "id": 5,
     "key": "35",
     "slug": "glorbo-fruttodrillo",
     "name": "Glorbo Fruttodrillo",
@@ -95,7 +87,7 @@
     "inbattle_spanish": "Glorbo Fruttodrillo puede enfrentarse decentemente a personajes mas pequenos o debiles; sin embargo, como se vio en su pelea con Tung Tung Tung Sahur, un personaje mas poderoso, parece perder muy mal. (Glorbo exploto cuando Tung Sahur exploto desde dentro de el). Glorbo Fruttodrillo puede vencer a la mayoria de los personajes con sus poderes, especialmente a los mas pequenos; tiene bombas de semillas y puede lanzar semillas explosivas de sandia con precision de francotirador, lo que causa mucho dano. Tambien tiene el rayo solar: puede absorber la luz del sol a traves de su corteza y disparar una rafaga de energia concentrada, basicamente un laser alimentado por fruta. Si el oponente hiere a Glorbo Fruttodrillo, puede regenerarse haciendo crecer nuevas frutas de su propio cuerpo.\r\n"
   },
   {
-    "id": 5,
+    "id": 6,
     "key": "31",
     "slug": "ballerina-cappuccina",
     "name": "Ballerina Cappuccina",
@@ -114,7 +106,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 6,
+    "id": 7,
     "key": "10",
     "slug": "bobrito-bandito",
     "name": "Bobrito bandito",
@@ -133,11 +125,11 @@
     "inbattle_spanish": "Bobrito Bandito es un excepcional luchador de reconocimiento especializado en sigilo. A menudo se le ve en batallas surgiendo de las sombras de sus oponentes y asesinandolos con rapidez. Sin embargo, su debilidad reside en el enfrentamiento directo, ya que su complexion carece de defensa.\r\n"
   },
   {
-    "id": 7,
+    "id": 8,
     "key": "22",
     "slug": "bri-bri-bicus-dicus",
     "name": "Bri Bri Bicus Dicus",
-    "image": "./images/008-bri-bri-bicus-dicus.jpg",
+    "image": "./images/008-bri-bri-bicus-dicus.webp.png",
     "video": "https://media.tenor.com/HS3FIdhDkEMAAAAC/bicus-dicus-italian-brain-rot.gif",
     "lyrics_italian": "Bri Bri Bicus Dicus de Bicus de Dicus, un dannato uccello volante che marcia per le strade di Roma, rimproverando chiunque, a suo avviso, disonori l'Impero. Non crede nei valori moderni e rimpiange il vecchio ordine.\r\n",
     "lyrics_english": "Bri Bri Bicus Dicus de Bicus de Dicus, a damned flying bird who marches through the streets of Rome, berating anyone who, in his opinion, dishonors the Empire. He does not believe in modern values ​​and longs for the old order.\r\n",
@@ -152,7 +144,7 @@
     "inbattle_spanish": "Durante las Guerras Croco-Aviar, Bri Bri Bicus Dicus se puso del lado de las aves y regreso a Roma como un heroe, un icono del glorioso pasado de Roma.\r\n"
   },
   {
-    "id": 8,
+    "id": 9,
     "key": "11",
     "slug": "boneca-ambalabu",
     "name": "Boneca ambalabu",
@@ -171,7 +163,7 @@
     "inbattle_spanish": "A pesar de la temible descripcion del personaje, parece bastante debil en combate: no tiene muchas maneras de atacar al oponente. Sus mejores habilidades son sacar la lengua, rodar en su neumatico y golpear a sus oponentes con el.\r\n"
   },
   {
-    "id": 9,
+    "id": 10,
     "key": "16",
     "slug": "brr-brr-patatim",
     "name": "Brr Brr Patatim",
@@ -190,7 +182,7 @@
     "inbattle_spanish": "El personaje es generalmente visto como una criatura benevola, y en batallas, no es representado como un luchador muy fuerte, a pesar de su tamano. Su falta de brazos adecuados esta limitando su potencial en la batalla, lo que le hace perder la mayoria de los enfrentamientos. Suele usar poderes como la transformacion, pero esto no siempre funciona a su favor. Su pelea mas famosa fue contra Tung Tung Tung Sahur, que gano aplastando a Tung Tung Tung Sahur con sus pies gigantes. Asi que sigue siendo bastante fuerte para los pequenos brainrots porque puede aplastarlos con sus pies gigantes. Como parte arbol, Brr Brr Patapim puede enraizar en el suelo, controlar el musgo y las enredaderas, e incluso provocar un rapido crecimiento del bosque para enredar a los enemigos o escapar si es necesario.\r\n"
   },
   {
-    "id": 10,
+    "id": 11,
     "key": "29",
     "slug": "burbaloni-lulioli",
     "name": "Burbaloni Lulliloli",
@@ -209,11 +201,11 @@
     "inbattle_spanish": "Burbaloni Luliloli es extremadamente fuerte. Como es un dios mitologico entre la gente de Bali, posee poderes divinos basados en cocos que pueden abrumar facilmente a cualquier oponente.\r\n"
   },
   {
-    "id": 11,
+    "id": 12,
     "key": "15",
     "slug": "capuchino-asesino",
     "name": "Capuchino Asesino",
-    "image": "./images/012-capuchino-asesino.jpg",
+    "image": "hi-res/012-capuchino-asesino.webp",
     "video": "https://media1.tenor.com/m/oOSwgqW2QUkAAAAd/capussinoassassino-brainrotmeme.gif",
     "lyrics_italian": "¡Cappu-cappu-cappuccino Asesino! ¡Asesinos capuchinos! Este asesino furtivo se infiltra tra i nemici approffitando de la notte. ¡Attento, oddiatore di caffe! Se non bevi una tazza di cappuccino al mattino, e meglio non incrociare este tizio.\r\n",
     "lyrics_english": "Capuchin assassin! Capuchin assassins! This stealthy assassin infiltrates the enemy at night. Beware, coffee hater! If you don't have a cappuccino in the morning, you'd better not cross paths with this guy.v\r\n",
@@ -228,7 +220,7 @@
     "inbattle_spanish": "A pesar de ser ideal para el combate, no se han grabado muchos videos de batallas que involucren a Cappuccino Assassino. Cuando se le utiliza, el personaje usa sus katanas como arma principal. Es capaz de fortalecer las espadas prendiendoles fuego.\r\n"
   },
   {
-    "id": 12,
+    "id": 13,
     "key": "112",
     "slug": "cacto-hipopotamo",
     "name": "Cacto hipopotamo",
@@ -247,7 +239,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 27,
+    "id": 14,
     "key": "25",
     "slug": "salamino-penguino",
     "name": "Salamino Penguino",
@@ -266,7 +258,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 13,
+    "id": 15,
     "key": "32",
     "slug": "chef-crabracadabra",
     "name": "Chef Crabracadabra",
@@ -285,7 +277,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 14,
+    "id": 16,
     "key": "113",
     "slug": "ganster-footera",
     "name": "Ganster footera",
@@ -304,7 +296,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 15,
+    "id": 17,
     "key": "30",
     "slug": "chimpanzini-bananini",
     "name": "Chimpanzini Bananini",
@@ -323,7 +315,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 16,
+    "id": 18,
     "key": "4",
     "slug": "fluri-frulla",
     "name": "Fluri Frulla",
@@ -342,7 +334,7 @@
     "inbattle_spanish": "En enfrentamientos, no lucha con fuerza bruta, sino con velocidad y confusion. Gira, patina y desestabiliza a sus rivales, haciendolos perder el equilibrio. Su baile caotico lo convierte en un blanco dificil de alcanzar.\r\n"
   },
   {
-    "id": 28,
+    "id": 19,
     "key": "37",
     "slug": "strawberrelli-flamingelli",
     "name": "Strawberrelli Flamingelli",
@@ -361,7 +353,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 18,
+    "id": 20,
     "key": "3",
     "slug": "karkerkar-kurkur",
     "name": "Karkerkar Kurkur",
@@ -380,7 +372,7 @@
     "inbattle_spanish": "En la historia de los fans y en los videos, se le describe como resistente, extrano y casi invencible. Lucha girando como una silla maldita, golpeando con patas metalicas y lanzandose contra sus oponentes.\r\n"
   },
   {
-    "id": 19,
+    "id": 21,
     "key": "34",
     "slug": "leonelli-cactuselli",
     "name": "Leonelli Cactuselli",
@@ -399,7 +391,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 20,
+    "id": 22,
     "key": "2",
     "slug": "lirili-larila",
     "name": "Lirili Larila",
@@ -418,7 +410,7 @@
     "inbattle_spanish": "A menudo se le atribuye la capacidad de controlar el tiempo mediante el despertador. Esto le otorga un desempeno impresionante en combate, incluso derrotando a Tung Tung Tung Sahur y Tralalero Tralala. Tambien ha podido derrotar a personajes como Cappuccino Assassino simplemente pisoteandolo con sus gigantescas sandalias.\r\n"
   },
   {
-    "id": 21,
+    "id": 23,
     "key": "28",
     "slug": "penguino-cocosino",
     "name": "Penguino Cocosino",
@@ -437,7 +429,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 41,
+    "id": 24,
     "key": "49",
     "slug": "gangazelli-trulala",
     "name": "Ganganzelli Trulala",
@@ -456,11 +448,11 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 22,
+    "id": 25,
     "key": "23",
     "slug": "noobini-pizzanini",
     "name": "Noobini Pizzanini",
-    "image": "./images/025-noobini-pizzanini.jpg",
+    "image": "./hi-res/025-noobini-pizzanini.webp",
     "video": "https://kblrqzpdharaxwokgwqm.supabase.co/storage/v1/object/public/Brainrots/Download%20(4).gif",
     "lyrics_italian": "Noobini Pizzanini! Il Noob di Roblox ama la pizza piu di ogni altra cosa. Ogni volta che finisce una partita corre a cercare una pizzeria nel gioco.\r\n",
     "lyrics_english": "Noobini Pizzanini! Roblox's Noob loves pizza more than anything. Every time he finishes a match, he runs to find a pizza place in the game.\r\n",
@@ -475,7 +467,7 @@
     "inbattle_spanish": "Guerra definitiva de la piramide acuatica de Ti Ti Ti Sahur y la invasion.\r\n\r\nNoobini Pizzanini es invocado por Ta Ta Ta Ta Chipo, junto con Black Diamond, Lampini Chickini y Lobini Pizzini para irrumpir en su templo. Su vehiculo era su mascota, Lobini Pizzini.  \r\nEs bastante debil en batalla. Mientras lanzaba un chakram de pizza, fue derribado de un punetazo, amenazado por StikminZ y dividido en piezas (*studs*).\r\n"
   },
   {
-    "id": 23,
+    "id": 26,
     "key": "115",
     "slug": "perochello-lemonchello",
     "name": "Perochello Lemonchello",
@@ -494,7 +486,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 24,
+    "id": 27,
     "key": "14",
     "slug": "pipi-avocado",
     "name": "Pipi avocado",
@@ -513,7 +505,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 25,
+    "id": 28,
     "key": "8",
     "slug": "pipi-corni",
     "name": "Pipi Corni",
@@ -532,7 +524,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 26,
+    "id": 29,
     "key": "7",
     "slug": "pipi-kiwi",
     "name": "Pipi kiwi",
@@ -551,7 +543,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 29,
+    "id": 30,
     "key": "6",
     "slug": "svinino-bombardino",
     "name": "Svinino Bombardino",
@@ -570,7 +562,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 30,
+    "id": 31,
     "key": "12",
     "slug": "ta-ta-ta-ta-sahur",
     "name": "Ta ta ta ta ta sahur",
@@ -589,11 +581,11 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 31,
+    "id": 32,
     "key": "5",
     "slug": "talpa-di-ferro",
     "name": "Talpa di Ferro",
-    "image": "./images/032-talpa-di-ferro.jpg",
+    "image": "./hi-res/032-talpa-di-ferro.jpeg",
     "video": "https://i.ibb.co/zh2xsgdF/Download-2.gifhttps://i.ibb.co/zh2xsgdF/Download-2.gif",
     "lyrics_italian": "Ay, ay Dio. ¡Mio! Talpa di Ferro. In grado di scavare qualsiasi oggetto solido in grado di scavare anche il metallo! Despues de la fina guerra reciente entre Bombombini Gusini y Bombardiro Crocadilo , han cesado de existir en el mundo.\r\n",
     "lyrics_english": "Oh, Oh Dio. Mio! Talpa di Ferro. In grado di scavare qualsiasi oggetto solido in grado di scavare anche il metallo! Dopo la fine della recente guerra tra Bombombini Gusini e Bombardiro Crocadilo, hanno cessato di esistere nel mondo.\r\n",
@@ -608,7 +600,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 32,
+    "id": 33,
     "key": "26",
     "slug": "ti-ti-ti-sahur",
     "name": "Ti Ti Ti Sahur",
@@ -627,7 +619,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 33,
+    "id": 34,
     "key": "9",
     "slug": "trippi-troppi",
     "name": "Trippi troppi",
@@ -646,11 +638,11 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 34,
+    "id": 35,
     "key": "19",
     "slug": "trulimero-trulichina",
     "name": "Trulimero Trulichina",
-    "image": "./images/035-trulimero-trulichina.jpg",
+    "image": "./hi-res/035-trulimero-trulichina.png",
     "video": "https://kblrqzpdharaxwokgwqm.supabase.co/storage/v1/object/public/Brainrots/Download.gif",
     "lyrics_italian": "Trulimero Trulichina, il pretiletine in piscina, formaggio sulla trulalima, ma chi chiama la tazzina?\r\n",
     "lyrics_english": "Trulimero Trulichina, the pretiletine in the pool, cheese on the trulalima, but who calls the cup?\r\n",
@@ -665,7 +657,7 @@
     "inbattle_spanish": "Trulimero Trulichina, como era de esperarse por sus caracteristicas poco intimidantes, suele ser mencionado como uno de los combatientes mas debiles cerca del mar, perdiendo con frecuencia enfrentamientos contra Tralalero Tralala.\r\n"
   },
   {
-    "id": 35,
+    "id": 36,
     "key": "13",
     "slug": "tric-trac-baraboom",
     "name": "Tric trac baraboom",
@@ -684,7 +676,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 36,
+    "id": 37,
     "key": "1",
     "slug": "tralalero-tralala",
     "name": "Tralalero Tralala",
@@ -703,11 +695,11 @@
     "inbattle_spanish": "A pesar de ser un tiburon, Tralalero Tralala rara vez usa sus mandibulas; en cambio, suele ponerse de pie sobre sus patas traseras y golpear al oponente con guantes de boxeo (dado que los videos son generados por IA, no es necesario aplicar la logica de movimiento, y a menudo se anaden o eliminan partes del cuerpo de los personajes durante la batalla). Generalmente, Tralalero Tralala parece debil en comparacion con la mayoria de los demas personajes, debido a su falta de atributos poderosos. Sin embargo, debido a su popularidad, ha recibido poderes especiales, como la capacidad de saltar muy alto, por lo que suele ganar en enfrentamientos que parecen desfavorables. Tralalero Tralala tambien participo en la Guerra Megaptera, donde se enfrento a su archienemigo, Wallotelo Tralala. Al final, perdio y murio de la faz de la Tierra despues de que Wallotelo Tralala, siendo mucho mas grande que el, le aplicara un gran golpe que le rompio todos los huesos.\r\n"
   },
   {
-    "id": 37,
+    "id": 38,
     "key": "44",
     "slug": "bombardiro-crocodilo",
     "name": "Bombardiro Crocodilo",
-    "image": "./images/038-bombardiro-crocodilo.jpg",
+    "image": "./hi-res/038-bombardiro-crocodilo.jpg",
     "video": "https://media1.tenor.com/m/RR-8CBT-yb4AAAAC/plane-memes.gif",
     "lyrics_italian": "Bombardiro Crocodilo, un fottuto alligatore volante, che vola e bombarda i bambini a Gaza e in Palestina. Non crede in Allah, e ama le bombe. Si nutre dello spirito di tua madre. E se hai tradotto tutto questo, allora sei uno stronzo. Non rompere la battuta, prostituta.\r\n",
     "lyrics_english": "Bombardiro Crocodillo, a fucking flying alligator who flies and bombs children in Gaza and Palestine. Doesn't believe in Allah and loves bombs. He feeds on the spirit of your mother. If you translated all that, then you're an asshole. Don't break the joke, whore.\r\n",
@@ -722,7 +714,7 @@
     "inbattle_spanish": "En batalla, Bombardiro Crocodilo suele ser considerado uno de los personajes mas fuertes del universo debido a su enorme poder fisico. Su cuerpo, al ser el de un avion bombardero, es suficiente para superar facilmente a la mayoria de los personajes. Su tecnica principal consiste en perseguir a su oponente y dejar caer una bomba sobre el desde el cielo.\r\n"
   },
   {
-    "id": 38,
+    "id": 39,
     "key": "45",
     "slug": "bombombini-gusini",
     "name": "Bombombini Gusini",
@@ -741,7 +733,7 @@
     "inbattle_spanish": "Antes de la mejora  \r\nEs mas debil que su hermano, Bombardiro Crocodilo, debido a su armamento limitado. A pesar de esto, tiene potencial para ser fuerte, pero no cuenta con los recursos suficientes para lograrlo.\r\n\r\nDespues de la mejora  \r\nEs mucho mas fuerte, aunque sigue sin ser uno de los mas poderosos incluso con sus nuevos poderes, ya que puede volver a un estado mas debil cuando Lirili Larila muere.\r\n\r\nArmas y habilidades  \r\n- Lanzagranadas: Puede disparar hasta 15 metros hacia adelante antes de que el proyectil caiga al suelo. Solo es util a corta distancia o para bombardeos.  \r\n- Granadas grandes: Posee 10 granadas de 500 libras en los costados, utiles para bombardeos en alfombra.  \r\n- Vinculo vital: Bombombini Gusini puede ser mejorado para volverse mas poderoso, pero depende de que la persona que lo mejoro siga viva para mantener ese poder.  \r\n- Misiles: Tiene misiles que puede disparar. En combate puede lanzarlos continuamente contra su oponente.  \r\n\r\nSuperpoderes  \r\nTiene municion infinita y puede producir bombas atomicas de la nada. Tambien posee la capacidad de teletransportarse a cualquier lugar. Sin embargo, antes de su mejora por las manos de Lirili Larila (durante las guerras Croco-Aviares), su arsenal era mas debil que el de su hermano.\r\n"
   },
   {
-    "id": 39,
+    "id": 40,
     "key": "46",
     "slug": "cavallo-virtuoso",
     "name": "Cavallo Virtuoso",
@@ -760,7 +752,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 40,
+    "id": 41,
     "key": "39",
     "slug": "cocosini-mama",
     "name": "Cocosini Mama",
@@ -779,7 +771,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 67,
+    "id": 42,
     "key": "69",
     "slug": "trenostruzzo-turbo-4000",
     "name": "Trenostruzzo Turbo 4000",
@@ -798,7 +790,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 42,
+    "id": 43,
     "key": "41",
     "slug": "frigo-camelo",
     "name": "Frigo Camelo",
@@ -817,7 +809,7 @@
     "inbattle_spanish": "Aunque es inutil en combates directos uno a uno, Frigo Camelo es un recurso valioso en batallas grupales,  \r\ncapaz de almacenar y reponer energia para su equipo, lo que les da una resistencia superior.  \r\nTambien es bastante eficaz para esquivar ataques debido a su velocidad de movimiento relativamente alta.  \r\nSin embargo, si Frigo Camelo lucha en ambientes calurosos, tiene una gran desventaja debido a su cuerpo de nevera que se derrite.\r\n"
   },
   {
-    "id": 43,
+    "id": 44,
     "key": "47",
     "slug": "gorillo-watermelondrillo",
     "name": "Gorillo Watermellondrillo",
@@ -836,7 +828,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 44,
+    "id": 45,
     "key": "42",
     "slug": "orangutini-ananasini",
     "name": "Orangutini Ananasini",
@@ -855,7 +847,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 45,
+    "id": 46,
     "key": "38",
     "slug": "pandaccini-bananini",
     "name": "Pandaccini Bananini",
@@ -874,7 +866,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 46,
+    "id": 47,
     "key": "43",
     "slug": "rhino-toasterino",
     "name": "Rhino Toasterino",
@@ -893,7 +885,7 @@
     "inbattle_spanish": "**Pan Ardiente:** Puede quemar a los enemigos usando su cuerpo-tostadora.  \r\n**Panes Afilados:** Puede disparar proyectiles de pan.\r\n"
   },
   {
-    "id": 47,
+    "id": 48,
     "key": "40",
     "slug": "sigma-boy",
     "name": "Sigma Boy",
@@ -912,7 +904,7 @@
     "inbattle_spanish": "Sigma Boy puede invocar cafe en cualquier momento, y este cafe garantiza mantenerte despierto durante horas.\r\n"
   },
   {
-    "id": 48,
+    "id": 49,
     "key": "50",
     "slug": "te-te-te-sahur",
     "name": "Te Te Te Sahur",
@@ -931,7 +923,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 49,
+    "id": 50,
     "key": "48",
     "slug": "tob-tobi-tob",
     "name": "Tob Tobi Tob Tob Tobi Tob",
@@ -950,7 +942,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 50,
+    "id": 51,
     "key": "51",
     "slug": "tung-tung-tung-sahur",
     "name": "Tung Tung Tung Sahur",
@@ -969,7 +961,7 @@
     "inbattle_spanish": "El personaje es considerado con frecuencia como el mas poderoso de todo el universo. Su fuerza proviene del bate que empuna y de sus habilidades sobrenaturales (aparece como una aterradora anomalia). \r\n\r\nAdemas de golpear a sus oponentes con su arma, es conocido por poder transformarse en una forma mas poderosa: un gorila de madera gigante. Gracias a esta habilidad de transformacion, es muy dificil que sus enemigos puedan vencer a Tung Tung Tung Sahur.\r\n"
   },
   {
-    "id": 51,
+    "id": 52,
     "key": "52",
     "slug": "cachorrito-melonito",
     "name": "Cachorrito Melonito",
@@ -988,7 +980,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 52,
+    "id": 53,
     "key": "53",
     "slug": "elefantino-frigorifero",
     "name": "Elefantino Frigorifero",
@@ -1007,7 +999,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 53,
+    "id": 54,
     "key": "54",
     "slug": "spaghetti-tualetti",
     "name": "Spaghetti Tualetti",
@@ -1026,7 +1018,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 54,
+    "id": 55,
     "key": "55",
     "slug": "tractoro-dinosauro",
     "name": "Tractoro Dinosauro",
@@ -1045,7 +1037,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 55,
+    "id": 56,
     "key": "56",
     "slug": "penguinelli-cactussini",
     "name": "Penguinelli Cactussini",
@@ -1064,7 +1056,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 56,
+    "id": 57,
     "key": "57",
     "slug": "carloo",
     "name": "Carloo",
@@ -1083,7 +1075,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 57,
+    "id": 58,
     "key": "58",
     "slug": "se-se-se-serio-sahur",
     "name": "Se Se Se Serio Sahur",
@@ -1102,7 +1094,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 58,
+    "id": 59,
     "key": "59",
     "slug": "spijuniro-golubiro",
     "name": "Spijuniro Golubiro",
@@ -1121,7 +1113,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 59,
+    "id": 60,
     "key": "60",
     "slug": "zibra-zubra-zibralini",
     "name": "Zibra Zubra Zibralini",
@@ -1140,7 +1132,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 60,
+    "id": 61,
     "key": "61",
     "slug": "tigrrullini-watermellini",
     "name": "Tigrrullini Watermellini",
@@ -1159,7 +1151,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 61,
+    "id": 62,
     "key": "62",
     "slug": "cocofanto-elefanto",
     "name": "Cocofanto Elefanto",
@@ -1178,7 +1170,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 62,
+    "id": 63,
     "key": "66",
     "slug": "espressona-signora",
     "name": "Espressona Signora",
@@ -1197,7 +1189,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 63,
+    "id": 64,
     "key": "63",
     "slug": "giraffa-celeste",
     "name": "Giraffa Celeste",
@@ -1216,7 +1208,7 @@
     "inbattle_spanish": "Giraffa Celeste VS La Vacca Saturno Saturnita. La batalla comienza con La Vacca Saturno Saturnita volando y aterrizando frente a Giraffa Celeste. Cuando Giraffa intenta atacar, La Vacca Saturno Saturnita eructa un laser negro que crea un agujero en el suelo, y Giraffa Celeste cae en el. La vaca resulta victoriosa.\r\n"
   },
   {
-    "id": 64,
+    "id": 65,
     "key": "65",
     "slug": "matteo",
     "name": "Matteo",
@@ -1235,7 +1227,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 65,
+    "id": 66,
     "key": "67",
     "slug": "odin-din-din-dun",
     "name": "Odin Din Din",
@@ -1254,7 +1246,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 66,
+    "id": 67,
     "key": "68",
     "slug": "trenostruzzo-turbo-3000",
     "name": "Trenostruzzo Turbo 3000",
@@ -1429,7 +1421,7 @@
     "key": "74",
     "slug": "los-bombominitos",
     "name": "Los Bombominitos",
-    "image": "./images/076-los-bombominitos.jpg",
+    "image": "./hi-res/076-los-bombominitos.jpg",
     "video": "https://kblrqzpdharaxwokgwqm.supabase.co/storage/v1/object/public/Brainrots/ssstik.io_danniel.mrt_1760133636041-ezgif.com-video-to-webp-converter.webp",
     "lyrics_italian": "Los bombombinitos dicen bom bom bom! Los bombombinitos dicen bom bom bom! Los bombombinitos dicen bom bom bom!\r\n",
     "lyrics_english": "The bombombinitos say bom bom bom! The bombombinitos say bom bom bom! The bombombinitos say bom bom bom!\r\n",
@@ -1444,7 +1436,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 82,
+    "id": 77,
     "key": "84",
     "slug": "alessio",
     "name": "Alessio",
@@ -1463,7 +1455,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 77,
+    "id": 78,
     "key": "77",
     "slug": "orcalero-orcala",
     "name": "Orcalero Orcala",
@@ -1482,7 +1474,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 78,
+    "id": 79,
     "key": "79",
     "slug": "piccione-macchina",
     "name": "Piccione Macchina",
@@ -1501,7 +1493,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 79,
+    "id": 80,
     "key": "82",
     "slug": "quesadilla-crocodila",
     "name": "Quesadilla Crocodila",
@@ -1520,7 +1512,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 80,
+    "id": 81,
     "key": "76",
     "slug": "tigrulli-grapefrutunni",
     "name": "Tigrulli Grapefrutunni",
@@ -1539,7 +1531,7 @@
     "inbattle_spanish": "No hay informacion oficial"
   },
   {
-    "id": 81,
+    "id": 82,
     "key": "81",
     "slug": "tukanno-banano",
     "name": "Tukanno Bananno",
@@ -2088,5 +2080,62 @@
     "reception_spanish": "No hay informacion oficial",
     "inbattle_english": "No offcial information",
     "inbattle_spanish": "No hay informacion oficial"
+  },
+  {
+    "id": 111,
+    "key": "1111",
+    "slug": "diamondini-campini",
+    "name": "Diamondini Campini",
+    "image": "./hi-res/111-diamondini-camponini.jpeg",
+    "video": "",
+    "lyrics_italian": "",
+    "lyrics_english": "",
+    "lyrics_spanish": "",
+    "personality_english": "",
+    "personality_spanish": "",
+    "history_english": "",
+    "history_spanish": "",
+    "reception_english": "",
+    "reception_spanish": "",
+    "inbattle_english": "",
+    "inbattle_spanish": ""
+  },
+  {
+    "id": 112,
+    "key": "1112",
+    "slug": "bocadillo-pokadillo",
+    "name": "Bocadillo Pokadillo",
+    "image": "./hi-res/112-bocadillo-pokadillo.jpeg",
+    "video": "",
+    "lyrics_italian": "",
+    "lyrics_english": "",
+    "lyrics_spanish": "",
+    "personality_english": "",
+    "personality_spanish": "",
+    "history_english": "",
+    "history_spanish": "",
+    "reception_english": "",
+    "reception_spanish": "",
+    "inbattle_english": "",
+    "inbattle_spanish": ""
+  },
+  {
+    "id": 113,
+    "key": "1113",
+    "slug": "capybeara-escalera",
+    "name": "Bocadillo Pokadillo",
+    "image": "./hi-res/113-capybeara-escalera.jpeg",
+    "video": "",
+    "lyrics_italian": "",
+    "lyrics_english": "",
+    "lyrics_spanish": "",
+    "personality_english": "",
+    "personality_spanish": "",
+    "history_english": "",
+    "history_spanish": "",
+    "reception_english": "",
+    "reception_spanish": "",
+    "inbattle_english": "",
+    "inbattle_spanish": ""
   }
 ]
