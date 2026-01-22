@@ -1,38 +1,169 @@
+@font-face {
+  font-family: raleway;
+  src: url("./Raleway-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* --- Reset --- */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: rgba(230, 241, 250, 0.5);
 }
 
+/* --- Main Container --- */
+.mainContainer {
+  background-image: url("../hi-res/bg.webp");
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* --- Game Frame --- */
 .gameframe {
   max-width: 480px;
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 1 rem;
+  padding: 1rem;
 }
 
+/* --- Grid --- */
 .cards {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 across on mobile */
+  justify-items: center;
 }
 
+/* --- Individual Card --- */
 .gamecard {
-  background-color: rgba(247, 232, 210, 0.8);
-  aspect-ratio: 5 / 7;
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 1rem;
-}
-.rotImage {
-  aspect-ratio: 1 / 1;
+  max-width: 350px; /* caps size on desktop */
   width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 16px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  perspective: 1000px;
+  transition: transform 0.3s; /* for flip later */
 }
 
+/* --- Rotating inner --- */
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 5/7;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+  will-change: transform;
+}
+
+.cardInner.front {
+  transform: rotateY(0deg);
+}
+
+.cardInner.toBack {
+  transform: rotateY(180deg);
+}
+
+.cardInner.back {
+  transform: rotateY(180deg);
+}
+
+.cardInner.toFront {
+  transform: rotateY(0deg);
+}
+
+.cardInner.front,
+.cardInner.back {
+  transition: none;
+}
+
+.cardInner.toBack,
+.cardInner.toFront {
+  transition: transform 0.4s ease;
+}
+
+/* --- Front & Back shared --- */
+.cardFront,
+.cardBack {
+  position: absolute;
+  inset: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.cardFront {
+  background: rgba(246, 232, 210, 0.8);
+}
+
+.cardBack {
+  background: #1e293b;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* --- Image wrapper for overlay --- */
+.image-wrapper {
+  position: relative; /* anchors overlay */
+  width: 100%;
+  aspect-ratio: 5 / 7; /* trading card ratio */
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* --- Card image --- */
+.rotImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills box, crops if needed */
+  display: block;
+  border-radius: 8px;
+}
+
+/* --- Name overlay --- */
+.card-name {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+
+  font-size: clamp(0.65rem, 2.5vw, 0.9rem);
+  font-family: "raleway", sans-serif;
+  line-height: 1.1;
+
+  display: -webkit-box; /* limits lines */
+  -webkit-line-clamp: 2; /* max 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- Desktop-only elements --- */
+.desktop_only {
+  display: none;
+}
+
+/* --- Responsive Breakpoints --- */
 @media (min-width: 768px) {
   .gameframe {
     max-width: 1200px;
@@ -42,6 +173,8 @@
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
-}
 
-@media (min-width: 1024px);
+  .desktop_only {
+    display: block;
+  }
+}

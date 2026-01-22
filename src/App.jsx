@@ -9,6 +9,8 @@ function App() {
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
   const [clickedCards, setClickedCards] = useState([]);
+  const [roundPhase, setRoundPhase] = useState("front");
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -37,7 +39,28 @@ function App() {
     setImageGroup(newList);
   }
 
+  function endRound() {
+    setIsAnimating(true);
+    setRoundPhase("toBack");
+
+    setTimeout(() => {
+      setRoundPhase("back");
+
+      Shuffle();
+
+      setTimeout(() => {
+        setRoundPhase("toFront");
+
+        setTimeout(() => {
+          setRoundPhase("front");
+          setIsAnimating(false);
+        }, 400);
+      }, 50);
+    }, 400);
+  }
+
   function Clicked(id) {
+    if (isAnimating) return;
     if (!clickedCards.includes(id)) {
       console.log("right on");
       setScore((prev) => prev + 1);
@@ -46,14 +69,14 @@ function App() {
     } else if (clickedCards.includes(id)) {
       if (highScore < score) {
         setHighScore(score);
-        setScore(0);
-        setClickedCards([]);
-        Shuffle();
-      } else {
-        setScore(0);
-        setClickedCards([]);
-        Shuffle();
       }
+      setScore(0);
+      setClickedCards([]);
+      endRound();
+    } else {
+      setScore(0);
+      setClickedCards([]);
+      endRound();
     }
   }
 
@@ -65,15 +88,16 @@ function App() {
   return (
     <>
       <div></div>
-      <h1>Click a BrainRot</h1>
+      <h1 className="desktop_only">Click a BrainRot</h1>
       <div className="card">
-        <h2>
+        <h2 className="desktop_only">
           This round's score is {score} | High Score is {highScore}
         </h2>
         <div>
           <CardDiv
             imageGroup={imageGroup}
             Clicked={Clicked}
+            roundPhase={roundPhase}
             imageList={imageList}
           />
         </div>
