@@ -10,9 +10,10 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [clickedCards, setClickedCards] = useState([]);
   const [round, setRound] = useState(1);
+  const [gamePhase, setGamePhase] = useState("beginGame");
   const [layout, setLayout] = useState("twoByTwo");
   const [shufflingPhase, setShufflingPhase] = useState("front");
-  const [overlay, setOverlay] = useState("visible");
+  const [overlay, setOverlay] = useState("hidden");
 
   useEffect(() => {
     const controller = new AbortController();
@@ -29,7 +30,7 @@ function App() {
           .sort(() => Math.random() - 0.5)
           .slice(0, 4);
         setImageGroup(fourImages);
-        setOverlay("hidden");
+        // setOverlay("hidden");
       })
       .catch((error) => {
         console.log(error);
@@ -73,9 +74,13 @@ function App() {
     setShufflingPhase("shufflingOut");
     setTimeout(() => {
       Shuffle(1);
-      // setOverlay("hidden");
       setShufflingPhase("shufflingIn");
     }, 250);
+  }
+
+  function newGame() {
+    setGamePhase("play");
+    setOverlay("hidden");
   }
 
   function Clicked(id) {
@@ -90,10 +95,12 @@ function App() {
       }
       setScore(0);
       setClickedCards([]);
+      setGamePhase("gameover");
       endRound();
     } else {
       setScore(0);
       setClickedCards([]);
+      setGamePhase("gameover");
       endRound();
     }
   }
@@ -121,10 +128,12 @@ function App() {
     <>
       <div className={`overlay ${overlay}`}>
         <div className={`messageArea ${overlay}`}>
-          <h2>Game Over</h2>
-          <br />
-          <h3>Play Again?</h3>
-          <button onClick={() => setOverlay("hidden")}>Again!</button>
+          <div className={`${gamePhase === "gameover"} && ${overlay}`}>
+            <h2>Game Over</h2>
+            <br />
+            <h3>Play Again?</h3>
+            <button onClick={() => newGame()}>Again!</button>
+          </div>
         </div>
       </div>
       <h1 className="desktop_only">Click a BrainRot</h1>
