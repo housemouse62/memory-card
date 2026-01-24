@@ -3,3 +3,38 @@
   margin: 0 auto;
   text-align: center;
 }
+
+/* --- Overlay --- */
+.overlay {
+  display: flex;
+
+  justify-content: center;
+  position: fixed;
+  opacity: 1;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.messageArea {
+  position: relative;
+  top: 15%;
+  height: 20%;
+  width: 70%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.messageArea.hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .messageArea {
+    height: 30%;
+    width: 30%;
+  }
+}

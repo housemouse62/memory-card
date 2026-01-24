@@ -18,40 +18,76 @@ body {
 
 /* --- Main Container --- */
 .mainContainer {
+  display: flex;
   background-image: url("../hi-res/bg.webp");
   width: 100%;
   min-height: 100vh;
+  align-items: center;
 }
 
 /* --- Game Frame --- */
 .gameframe {
-  max-width: 480px;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
+  /* z-index: 1; */
+  /* max-width: 480px; */
+  width: 100vw;
+  height: 100vh;
+  /* margin: 0 auto; */
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* --- Grid --- */
 .cards {
   display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(3, 1fr); /* 3 across on mobile */
-  justify-items: center;
+  gap: 1rem;
+  height: 100%;
 }
 
+.cards.twoByTwo {
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+
+.cards.twoByThree {
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  /* width: min(100vw, calc(100vh * 10 / 21));
+  height: min(100vh, calc(100vw * 21 / 10)); */
+  /* place-content: center; */
+  /* gap: 1rem; */
+}
+
+.cards.threeByThree {
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  gap: 1rem;
+
+  /* width: min(100vw, calc(100vh * (3 * 5) / (3 * 7)));
+  height: min(100vh, calc(100vw * (3 * 7) / (3 * 5))); */
+}
+
+.cards.threeByFour {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.cards.fourByFour {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
 /* --- Individual Card --- */
 .gamecard {
   max-width: 350px; /* caps size on desktop */
   width: 100%;
+  height: 100%;
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  perspective: 1000px;
-  transition: transform 0.3s; /* for flip later */
 }
 
 /* --- Rotating inner --- */
@@ -60,68 +96,34 @@ body {
   width: 100%;
   height: 100%;
   aspect-ratio: 5/7;
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease;
-  will-change: transform;
-}
-
-.cardInner.front {
-  transform: rotateY(0deg);
-}
-
-.cardInner.toBack {
-  transform: rotateY(180deg);
-}
-
-.cardInner.back {
-  transform: rotateY(180deg);
-}
-
-.cardInner.toFront {
-  transform: rotateY(0deg);
-}
-
-.cardInner.front,
-.cardInner.back {
   transition: none;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
 
-.cardInner.toBack,
-.cardInner.toFront {
-  transition: transform 0.4s ease;
+.cardInner.shufflingOut {
+  opacity: 0;
+  transform: translateY(-6px) scale(0.97);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
-/* --- Front & Back shared --- */
-.cardFront,
-.cardBack {
-  position: absolute;
-  inset: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.cardFront {
-  background: rgba(246, 232, 210, 0.8);
-}
-
-.cardBack {
-  background: #1e293b;
-  color: white;
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
+.cardInner.shufflingIn {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
 }
 
 /* --- Image wrapper for overlay --- */
 .image-wrapper {
-  position: relative; /* anchors overlay */
+  position: relative;
   width: 100%;
-  aspect-ratio: 5 / 7; /* trading card ratio */
+  height: 100%;
+  aspect-ratio: 5 / 7;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -130,7 +132,7 @@ body {
 .rotImage {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* fills box, crops if needed */
+  object-fit: cover;
   display: block;
   border-radius: 8px;
 }
