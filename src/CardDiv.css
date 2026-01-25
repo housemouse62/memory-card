@@ -149,6 +149,10 @@
     max-width: 1200px;
   }
 
+  .gameframe.twoByTwo,
+  .gameframe.fourByFour {
+    height: auto;
+  }
   .cards.twoByThree {
     grid-template-columns: repeat(3, 1fr);
   }

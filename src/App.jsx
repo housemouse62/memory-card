@@ -28,12 +28,10 @@ function App() {
       })
       .then((response) => {
         setImageList(response);
-        console.log(response);
         let fourImages = [...response]
           .sort(() => Math.random() - 0.5)
           .slice(0, 4);
         setImageGroup(fourImages);
-        // setOverlay("hidden");
       })
       .catch((error) => {
         console.log(error);
@@ -47,32 +45,25 @@ function App() {
     setImageGroup(group);
   }
 
-  // Shuffle between rounds as user advances
-  function Shuffle(round) {
-    let num;
-
-    if (round === 1) {
-      setLayout("twoByTwo");
-      num = 4;
-    } else if (round === 2) {
-      setLayout("twoByThree");
-      num = 6;
-    } else if (round === 3) {
-      setLayout("threeByThree");
-      num = 9;
-    } else if (round === 4) {
-      setLayout("threeByFour");
-      num = 12;
-    } else if (round === 5) {
-      setLayout("fourByFour");
-      num = 16;
-    }
+  useEffect(() => {
+    const cardCountByRound = { 1: 4, 2: 6, 3: 9, 4: 12, 5: 16 };
+    const layoutByRound = {
+      1: "twoByTwo",
+      2: "twoByThree",
+      3: "threeByThree",
+      4: "threeByFour",
+      5: "fourByFour",
+    };
+    const cardCount = cardCountByRound[round] ?? 16;
+    const thisLayout = layoutByRound[round] ?? "fourByFour";
 
     const newGroup = [...imageList]
       .sort(() => Math.random() - 0.5)
-      .slice(0, num);
+      .slice(0, cardCount);
     setImageGroup(newGroup);
-  }
+
+    setLayout(thisLayout);
+  }, [round]);
 
   function endRound() {
     setOverlay("visible");
@@ -80,9 +71,9 @@ function App() {
     setGamePhase("beginGame");
     setScore(0);
     setClickedCards([]);
-    setRound(1);
+    setRound(5);
     setTimeout(() => {
-      Shuffle(round);
+      // Shuffle(round);
       setShufflingPhase("shufflingIn");
     }, 250);
   }
@@ -116,7 +107,7 @@ function App() {
     setShufflingPhase("shufflingOut");
 
     setTimeout(() => {
-      Shuffle(round + 1);
+      // Shuffle(round + 1);
       setShufflingPhase("shufflingIn");
     }, 250);
   }

@@ -9,7 +9,7 @@ export function GetImages({ imageGroup, Clicked, shufflingPhase, layout }) {
   return (
     <>
       <div className="mainContainer">
-        <section aria-label="game cards area" className="gameframe">
+        <section aria-label="game cards area" className={`gameframe ${layout}`}>
           <div className={`cards ${layout}`}>
             {imageGroup.map((card) => (
               <div
