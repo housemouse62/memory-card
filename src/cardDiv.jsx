@@ -28,9 +28,6 @@ export function GetImages({ imageGroup, Clicked, shufflingPhase, layout }) {
                       <h3 className="card-name">{card.name}</h3>
                     </div>
                   </div>
-                  <div className="cardBack desktop_only">
-                    <p>BrainRot info / level info / credits</p>
-                  </div>
                 </div>
               </div>
             ))}

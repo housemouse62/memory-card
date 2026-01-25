@@ -10,7 +10,10 @@ function App() {
   const [highScore, setHighScore] = useState(0);
   const [clickedCards, setClickedCards] = useState([]);
   const [round, setRound] = useState(1);
+
   const [gamePhase, setGamePhase] = useState("beginGame");
+  // beginGame -> opening screen, play -> no layover, gameover -> play again screen
+
   const [layout, setLayout] = useState("twoByTwo");
   const [shufflingPhase, setShufflingPhase] = useState("front");
   const [overlay, setOverlay] = useState("hidden");
@@ -38,11 +41,13 @@ function App() {
     return () => controller.abort();
   }, []);
 
+  // Shuffle between each click, same group of cards
   function ShuffleGroup() {
     const group = [...imageGroup].sort(() => Math.random() - 0.5);
     setImageGroup(group);
   }
 
+  // Shuffle between rounds as user advances
   function Shuffle(round) {
     let num;
 
@@ -63,17 +68,21 @@ function App() {
       num = 16;
     }
 
-    const newList = [...imageList]
+    const newGroup = [...imageList]
       .sort(() => Math.random() - 0.5)
       .slice(0, num);
-    setImageGroup(newList);
+    setImageGroup(newGroup);
   }
 
   function endRound() {
     setOverlay("visible");
     setShufflingPhase("shufflingOut");
+    setGamePhase("beginGame");
+    setScore(0);
+    setClickedCards([]);
+    setRound(1);
     setTimeout(() => {
-      Shuffle(1);
+      Shuffle(round);
       setShufflingPhase("shufflingIn");
     }, 250);
   }
@@ -85,7 +94,6 @@ function App() {
 
   function Clicked(id) {
     if (!clickedCards.includes(id)) {
-      console.log("right on");
       setScore((prev) => prev + 1);
       setClickedCards((prev) => [...prev, id]);
       ShuffleGroup();
@@ -93,13 +101,9 @@ function App() {
       if (highScore < score) {
         setHighScore(score);
       }
-      setScore(0);
-      setClickedCards([]);
       setGamePhase("gameover");
       endRound();
     } else {
-      setScore(0);
-      setClickedCards([]);
       setGamePhase("gameover");
       endRound();
     }
@@ -119,28 +123,48 @@ function App() {
 
   useEffect(() => {
     if (imageGroup.length > 0 && clickedCards.length === imageGroup.length) {
-      console.log("hi");
+      console.log("array lengths matched");
       startNextRound();
     }
   }, [clickedCards, imageGroup]);
 
+  useEffect(() => {
+    console.log(clickedCards);
+    console.log(imageGroup);
+    console.log(`round ${round}`);
+  });
   return (
     <>
       <div className={`overlay ${overlay}`}>
         <div className={`messageArea ${overlay}`}>
           <div className={`${gamePhase === "gameover"} && ${overlay}`}>
-            <h2>Game Over</h2>
+            <h2 className="gameOver">Game Over</h2>
             <br />
-            <h3>Play Again?</h3>
-            <button onClick={() => newGame()}>Again!</button>
+            <h3 className="playAgain">Play Again?</h3>
+            <button className="playButton" onClick={() => newGame()}>
+              Again!
+            </button>
           </div>
         </div>
       </div>
-      <h1 className="desktop_only">Click a BrainRot</h1>
+
+      <h1 className="desktop_only gameName">Click a BrainRot</h1>
       <div className="card">
-        <h2 className="desktop_only">
-          This round's score is {score} | High Score is {highScore}
-        </h2>
+        <aside className="roundScore desktop_only">
+          <div className="boardWord1">
+            <h2>Round</h2>
+            <span className="boardNum">{round}</span>
+          </div>
+          <div className="boardWord">
+            <h2>Clicked Cards</h2>
+            <span className="boardNum">{score}</span>
+          </div>
+          <div className="boardWord">
+            <h2>High Score</h2>
+            <span className="boardNum">{highScore}</span>
+          </div>
+        </aside>
+
         <div>
           <CardDiv
             imageGroup={imageGroup}

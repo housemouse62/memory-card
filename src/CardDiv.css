@@ -5,33 +5,16 @@
   font-style: italic;
 }
 
-/* --- Reset --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: rgba(230, 241, 250, 0.5);
-}
-
 /* --- Main Container --- */
 .mainContainer {
   display: flex;
-  background-image: url("../hi-res/bg.webp");
-  width: 100%;
-  min-height: 100vh;
   align-items: center;
 }
 
 /* --- Game Frame --- */
 .gameframe {
-  /* z-index: 1; */
-  /* max-width: 480px; */
   width: 100vw;
-  height: 100vh;
-  /* margin: 0 auto; */
+  height: 80vh;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -47,25 +30,15 @@ body {
 
 .cards.twoByTwo {
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
 }
 
 .cards.twoByThree {
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
-  /* width: min(100vw, calc(100vh * 10 / 21));
-  height: min(100vh, calc(100vw * 21 / 10)); */
-  /* place-content: center; */
-  /* gap: 1rem; */
 }
 
 .cards.threeByThree {
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: repeat(3, 1fr); */
   gap: 1rem;
-
-  /* width: min(100vw, calc(100vh * (3 * 5) / (3 * 7)));
-  height: min(100vh, calc(100vw * (3 * 7) / (3 * 5))); */
 }
 
 .cards.threeByFour {
@@ -77,6 +50,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
+
 /* --- Individual Card --- */
 .gamecard {
   max-width: 350px; /* caps size on desktop */
@@ -167,8 +141,31 @@ body {
 
 /* --- Responsive Breakpoints --- */
 @media (min-width: 768px) {
+  .mainContainer {
+    height: 80%;
+  }
+
   .gameframe {
     max-width: 1200px;
+  }
+
+  .cards.twoByThree {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards.threeByThree {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .cards.threeByFour {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+
+  .cards.fourByFour {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
   }
 
   .cards {
