@@ -71,7 +71,7 @@ function App() {
     setGamePhase("beginGame");
     setScore(0);
     setClickedCards([]);
-    setRound(5);
+    setRound(1);
     setTimeout(() => {
       // Shuffle(round);
       setShufflingPhase("shufflingIn");
