@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     const controller = new AbortController();
-    const url = "../allBrainrots.json";
+    const url = "/public/allBrainrots.json";
     fetch(url, { signal: controller.signal })
       .then((response) => {
         if (!response.ok) console.log(response.status);
