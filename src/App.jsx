@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import "./App.css";
-import CardDiv from "";
+import CardDiv from "./CardDiv";
 
 function App() {
   const [imageList, setImageList] = useState([]);
