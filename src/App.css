@@ -1,11 +1,11 @@
 @font-face {
   font-family: surreal;
-  src: url("/fonts/surreal.otf");
+  src: url("./assets/fonts/surreal.otf");
 }
 
 @font-face {
   font-family: raleway;
-  src: url("/fonts/Raleway-MediumItalic.ttf");
+  src: url("./assets/fonts/Raleway-MediumItalic.ttf");
   font-weight: 500;
   font-style: italic;
 }
